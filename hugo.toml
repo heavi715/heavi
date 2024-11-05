@@ -1,0 +1,4 @@
+baseURL = 'http://heavi.cn/'
+languageCode = 'zh-cn'
+title = 'heavi'
+theme = 'hugo-coder'
