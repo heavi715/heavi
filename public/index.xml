@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>heavi</title>
+    <link>http://heavi.cn/</link>
+    <description>Recent content on heavi</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 Nov 2024 15:45:51 +0800</lastBuildDate>
+    <atom:link href="http://heavi.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>graphrag</title>
+      <link>http://heavi.cn/posts/graphrag/</link>
+      <pubDate>Mon, 04 Nov 2024 15:45:51 +0800</pubDate>
+      <guid>http://heavi.cn/posts/graphrag/</guid>
+      <description>https://github.com/microsoft/graphrag&#xA;• GraphRAG（由微软）：此系统运用大型语言模型构建基于实体的知识图谱，并预先生成相关实体组的社区摘要，能够捕捉文档集合内的局部和全局关系，从而强化以查询为中心的摘要（QFS）任务。利用开源的 RAG 工具包快速实现，例如LlamaIndex、langchain等。 https://github.com/microsoft/graphrag • GraphRAG（由 NebulaGraph）：该项目是首个工业 GraphRAG 系统，由 NebulaGraph 公司开发。此项目将大型语言模型融入 NebulaGraph 数据库，旨在提供更智能、更精准的搜索结果。 https://www.nebula-graph.io/posts/graph-RAG • GraphRAG（由 Antgroup）：该框架基于诸如 DB-GPT、知识图谱引擎 OpenSPG 和图形数据库 TuGraph 等数个 AI 工程框架开发而成。先是利用大型语言模型从文档中提取三元组，接着将其存于图形数据库中。在检索阶段，它从查询中识别关键字，在图形数据库中定位相应节点，并使用 BFS 或 DFS 遍历子图。在生成阶段，将检索到的子图数据格式化为文本，并与上下文和查询一同提交给大型语言模型处理。 https://github.com/eosphoros-ai/DB-GPT • NallM（由 Neo4j）：NaLLM（Neo4j 和大型语言模型）框架将 Neo4j 图形数据库技术与大型语言模型相融合。它致力于探索并展示 Neo4j 与大型语言模型之间的协同作用，重点关注三个主要用例：知识图谱的自然语言接口、从非结构化数据创建知识图谱以及利用静态数据和大型语言模型数据生成报告。 https://github.com/neo4j/NaLLM • LLM 图形构建器（由 Neo4j）：这是 Neo4j 开发的用于自动构建知识图谱的项目，适用于 GraphRAG 的图形数据库构建和索引阶段。该项目主要借助大型语言模型从非结构化数据中提取节点、关系及其属性，并利用 LangChain 框架创建结构化知识图谱。 https://github.com/neo4j-labs/llm-graph-builder https://llm-graph-builder.neo4jlabs.com/?&amp;amp;utm_campaign=&amp;amp;utm_content=&amp;amp;utm_medium=&amp;amp;utm_source=YouTube&amp;amp;utm_justglobal=NA&#xA;http://neo4j.bangong.xxxxbox.cn/&#xA;neo4j://39.102.46.10:7687 neo4j/password https://console.neo4j.io/ key: ****-ZbFwZdp26fulANCoSRI 安装配置 链接到标题 pip install graphrag mkdir -p ./ragtest/input curl https://www.gutenberg.org/cache/epub/24022/pg24022.txt -o ./ragtest/input/book.txt python -m graphrag.</description>
+    </item>
+    <item>
+      <title>AI video</title>
+      <link>http://heavi.cn/posts/ai-chat-video/</link>
+      <pubDate>Sat, 02 Nov 2024 15:45:51 +0800</pubDate>
+      <guid>http://heavi.cn/posts/ai-chat-video/</guid>
+      <description>学生讲课视频做评价&#xA;视频用例 [40s]https://susuanimqiniu.xxxxbox.cn/17291526226730.mp4 [60s]https://susuanimqiniu.xxxxbox.cn/17290585767213.mp4 [all]https://susuanimqiniu.xxxxbox.cn/17291340367729.mp4 export DASHSCOPE_API_KEY=sk-******* 一、视频直接分析 链接到标题 1.aliyun qwen-vl-max-0809 链接到标题 视频支持40s 最少传入4张图片，最多可传入768张图片，暂时只支持通过URL形式传入图片。 如果您需要直接输入视频文件，请提交工单进行申请以及获取使用方式。 https://help.aliyun.com/zh/dashscope/developer-reference/tongyi-qianwen-vl-plus-api?spm=a2c4g.11186623.0.0.316346c1Sghv1k#63edd303a48qy&#xA;curl --location &amp;#39;https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions&amp;#39; \ --header &amp;#34;Authorization: Bearer $DASHSCOPE_API_KEY&amp;#34; \ --header &amp;#39;Content-Type: application/json&amp;#39; \ --data &amp;#39;{ &amp;#34;model&amp;#34;: &amp;#34;qwen-vl-max-latest&amp;#34;, &amp;#34;messages&amp;#34;: [ { &amp;#34;role&amp;#34;: &amp;#34;user&amp;#34;, &amp;#34;content&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;video_url&amp;#34;, &amp;#34;video_url&amp;#34;: { &amp;#34;url&amp;#34;: &amp;#34;https://susuanimqiniu.xxxxbox.cn/17291526226730.mp4&amp;#34; } }, { &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;, &amp;#34;text&amp;#34;: &amp;#34;这些是什么&amp;#34; } ] } ] }&amp;#39; {&amp;#34;choices&amp;#34;:[{&amp;#34;message&amp;#34;:{&amp;#34;content&amp;#34;:&amp;#34;这是一段关于数学教学的视频。视频中，一个男孩站在黑板前，黑板上写着一些数学题目和图形。男孩正在讲解这些数学题目，可能是在进行数学教学或演示。&amp;#34;,&amp;#34;role&amp;#34;:&amp;#34;assistant&amp;#34;},&amp;#34;finish_reason&amp;#34;:&amp;#34;stop&amp;#34;,&amp;#34;index&amp;#34;:0,&amp;#34;logprobs&amp;#34;:null}],&amp;#34;object&amp;#34;:&amp;#34;chat.completion&amp;#34;,&amp;#34;usage&amp;#34;:{&amp;#34;prompt_tokens&amp;#34;:23925,&amp;#34;completion_tokens&amp;#34;:45,&amp;#34;total_tokens&amp;#34;:23970},&amp;#34;created&amp;#34;:1729152686,&amp;#34;system_fingerprint&amp;#34;:null,&amp;#34;model&amp;#34;:&amp;#34;qwen-vl-max-latest&amp;#34;,&amp;#34;id&amp;#34;:&amp;#34;chatcmpl-509d6d81-e5ec-9b19-bfab-b92a58e9d5c4&amp;#34;} curl --location &amp;#39;https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions&amp;#39; \ --header &amp;#34;Authorization: Bearer $DASHSCOPE_API_KEY&amp;#34; \ --header &amp;#39;Content-Type: application/json&amp;#39; \ --data &amp;#39;{ &amp;#34;model&amp;#34;: &amp;#34;qwen-vl-max-latest&amp;#34;, &amp;#34;messages&amp;#34;: [ { &amp;#34;role&amp;#34;: &amp;#34;user&amp;#34;, &amp;#34;content&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;video_url&amp;#34;, &amp;#34;video_url&amp;#34;: { &amp;#34;url&amp;#34;: &amp;#34;https://susuanimqiniu.</description>
+    </item>
+    <item>
+      <title>1My First Post</title>
+      <link>http://heavi.cn/about/my-first-post/</link>
+      <pubDate>Fri, 02 Feb 2024 15:45:51 +0800</pubDate>
+      <guid>http://heavi.cn/about/my-first-post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1My First Post</title>
+      <link>http://heavi.cn/contact/my-first-post/</link>
+      <pubDate>Fri, 02 Feb 2024 15:45:51 +0800</pubDate>
+      <guid>http://heavi.cn/contact/my-first-post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1My First Post</title>
+      <link>http://heavi.cn/posts/my-first-post/</link>
+      <pubDate>Fri, 02 Feb 2024 15:45:51 +0800</pubDate>
+      <guid>http://heavi.cn/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1My First Post</title>
+      <link>http://heavi.cn/projects/my-first-post/</link>
+      <pubDate>Fri, 02 Feb 2024 15:45:51 +0800</pubDate>
+      <guid>http://heavi.cn/projects/my-first-post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
