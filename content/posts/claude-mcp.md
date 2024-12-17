@@ -13,7 +13,7 @@ draft = true
 <https://modelcontextprotocol.io/quickstart>
 
 通过claude 客户端
-![alt text](image.png)
+![alt text](https://heavi.cn/posts/claude-mcp/image.png)
 
 ```
 code ~/Library/Application\ Support/Claude/claude_desktop_config.json
