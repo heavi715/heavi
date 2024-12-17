@@ -37,18 +37,18 @@ https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-deve
 
 #### 1.图片物体识别
 
-![alt text](    https://heavi.cn/images/image-2.png)
+![alt text](https://heavi.cn/posts/gemini/image-2.png)
 
 https://gemini-spatial-example.grantcuster.com/
 
 https://github.com/GrantCuster/gemini-spatial-example
 
-![alt text](https://heavi.cn/images/image-1.png)
+![alt text](https://heavi.cn/posts/gemini/image-1.png)
 
 #### 2.prompt 图片编辑
 Gemini 2.0 Flash 现在原生生成图像并支持对话式多轮次编辑，因此您可以在以前的输出基础上进行构建并对其进行优化。它可以输出交错文本和图像，使其在食谱等多模式内容中非常有用。在本机图像输出视频中查看详细信息。
-![alt text](https://heavi.cn/images/image-3.png)
+![alt text](https://heavi.cn/posts/gemini/image-3.png)
 
 
 #### 3.Multimodal Live API 4. 多模式实时 API
-![alt text](https://heavi.cn/images/image-4.png)
+![alt text](https://heavi.cn/posts/gemini/image-4.png)
